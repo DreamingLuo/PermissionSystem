@@ -30,6 +30,14 @@
 		EB62D69D1D90D43A00394FC9 /* departmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62D69C1D90D43A00394FC9 /* departmentViewController.swift */; };
 		EB62D6A01D90D4AE00394FC9 /* organizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62D69F1D90D4AE00394FC9 /* organizationViewController.swift */; };
 		EB62D6A41D90D58100394FC9 /* relatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62D6A31D90D58100394FC9 /* relatedViewController.swift */; };
+		EB823A4C1D9269DC00C1D72C /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB823A481D9269DC00C1D72C /* TreeNode.swift */; };
+		EB823A4D1D9269DC00C1D72C /* TreeNodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB823A491D9269DC00C1D72C /* TreeNodeHelper.swift */; };
+		EB823A4E1D9269DC00C1D72C /* DataInof.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB823A4A1D9269DC00C1D72C /* DataInof.plist */; };
+		EB823A501D926A0600C1D72C /* TreeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB823A4F1D926A0600C1D72C /* TreeTableView.swift */; };
+		EB823A521D926A0D00C1D72C /* TreeNodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB823A511D926A0D00C1D72C /* TreeNodeTableViewCell.swift */; };
+		EB823A541D926A1500C1D72C /* TreeNodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB823A531D926A1500C1D72C /* TreeNodeTableViewCell.xib */; };
+		EB823A561D926A1D00C1D72C /* tree_ex.png in Resources */ = {isa = PBXBuildFile; fileRef = EB823A551D926A1D00C1D72C /* tree_ex.png */; };
+		EB823A581D926A2300C1D72C /* tree_ec.png in Resources */ = {isa = PBXBuildFile; fileRef = EB823A571D926A2300C1D72C /* tree_ec.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +87,14 @@
 		EB62D69C1D90D43A00394FC9 /* departmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = departmentViewController.swift; sourceTree = "<group>"; };
 		EB62D69F1D90D4AE00394FC9 /* organizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = organizationViewController.swift; sourceTree = "<group>"; };
 		EB62D6A31D90D58100394FC9 /* relatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = relatedViewController.swift; sourceTree = "<group>"; };
+		EB823A481D9269DC00C1D72C /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		EB823A491D9269DC00C1D72C /* TreeNodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeHelper.swift; sourceTree = "<group>"; };
+		EB823A4A1D9269DC00C1D72C /* DataInof.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataInof.plist; sourceTree = "<group>"; };
+		EB823A4F1D926A0600C1D72C /* TreeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableView.swift; sourceTree = "<group>"; };
+		EB823A511D926A0D00C1D72C /* TreeNodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeTableViewCell.swift; sourceTree = "<group>"; };
+		EB823A531D926A1500C1D72C /* TreeNodeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeTableViewCell.xib; sourceTree = "<group>"; };
+		EB823A551D926A1D00C1D72C /* tree_ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_ex.png; sourceTree = "<group>"; };
+		EB823A571D926A2300C1D72C /* tree_ec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_ec.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +145,7 @@
 		EB3F273A1D8FB5CF005C8F86 /* permissionSystem2 */ = {
 			isa = PBXGroup;
 			children = (
+				EB823A471D9269A500C1D72C /* 下拉菜单 */,
 				EB62D6A91D9106D000394FC9 /* 选文 */,
 				EB62D6A81D9106B900394FC9 /* 顶部菜单 */,
 				EB3F273D1D8FB5CF005C8F86 /* ViewController.swift */,
@@ -285,6 +302,30 @@
 			name = "选文";
 			sourceTree = "<group>";
 		};
+		EB823A471D9269A500C1D72C /* 下拉菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				EB823A531D926A1500C1D72C /* TreeNodeTableViewCell.xib */,
+				EB823A4F1D926A0600C1D72C /* TreeTableView.swift */,
+				EB823A511D926A0D00C1D72C /* TreeNodeTableViewCell.swift */,
+				EB823A571D926A2300C1D72C /* tree_ec.png */,
+				EB823A551D926A1D00C1D72C /* tree_ex.png */,
+				EB823A4B1D9269DC00C1D72C /* Models */,
+			);
+			name = "下拉菜单";
+			sourceTree = "<group>";
+		};
+		EB823A4B1D9269DC00C1D72C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB823A481D9269DC00C1D72C /* TreeNode.swift */,
+				EB823A491D9269DC00C1D72C /* TreeNodeHelper.swift */,
+				EB823A4A1D9269DC00C1D72C /* DataInof.plist */,
+			);
+			name = Models;
+			path = "../../../Downloads/TreeTableViewWithSwift-master-2/TreeTableVIewWithSwift";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -389,8 +430,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB823A4E1D9269DC00C1D72C /* DataInof.plist in Resources */,
 				EB3F27461D8FB5CF005C8F86 /* LaunchScreen.storyboard in Resources */,
 				EB3F277C1D8FD047005C8F86 /* arrow@3x.png in Resources */,
+				EB823A561D926A1D00C1D72C /* tree_ex.png in Resources */,
+				EB823A541D926A1500C1D72C /* TreeNodeTableViewCell.xib in Resources */,
+				EB823A581D926A2300C1D72C /* tree_ec.png in Resources */,
 				EB3F27431D8FB5CF005C8F86 /* Assets.xcassets in Resources */,
 				EB3F27411D8FB5CF005C8F86 /* Main.storyboard in Resources */,
 			);
@@ -422,12 +467,16 @@
 				EB3F27701D8FCA76005C8F86 /* configure.swift in Sources */,
 				EB3F277B1D8FD047005C8F86 /* SKScNavViewController.swift in Sources */,
 				EB3F277E1D8FD047005C8F86 /* SKLaunchMenu.swift in Sources */,
+				EB823A501D926A0600C1D72C /* TreeTableView.swift in Sources */,
 				EB3F27861D8FD73D005C8F86 /* choosePeopleViewController.swift in Sources */,
 				EB62D6A41D90D58100394FC9 /* relatedViewController.swift in Sources */,
 				EB3F277D1D8FD047005C8F86 /* SKMacros.swift in Sources */,
+				EB823A4D1D9269DC00C1D72C /* TreeNodeHelper.swift in Sources */,
 				EB3F27841D8FD0CF005C8F86 /* EnsureViewController.swift in Sources */,
 				EB3F277F1D8FD047005C8F86 /* SKLaunchMenuItem.swift in Sources */,
 				EB3F276E1D8FC7E1005C8F86 /* chooseDocumentViewController.swift in Sources */,
+				EB823A521D926A0D00C1D72C /* TreeNodeTableViewCell.swift in Sources */,
+				EB823A4C1D9269DC00C1D72C /* TreeNode.swift in Sources */,
 				EB62D69D1D90D43A00394FC9 /* departmentViewController.swift in Sources */,
 				EB3F273C1D8FB5CF005C8F86 /* AppDelegate.swift in Sources */,
 				EB3F27801D8FD047005C8F86 /* SKScNavBar.swift in Sources */,
